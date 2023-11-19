@@ -1,5 +1,5 @@
 
-import { AirlineEntity } from "src/airline/airline.entity";
+import { AirlineEntity } from "../airline/airline.entity";
 import { Entity, PrimaryGeneratedColumn, Column, ManyToMany, JoinTable } from "typeorm";
 
 @Entity()

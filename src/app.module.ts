@@ -6,6 +6,7 @@ import { AirlineModule } from './airline/airline.module';
 import { AirportModule } from './airport/airport.module';
 import { AirlineEntity } from './airline/airline.entity';
 import { AirportEntity } from './airport/airport.entity';
+import { AirlineAirportModule } from './airline-airport/airline-airport.module';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import { AirportEntity } from './airport/airport.entity';
       synchronize: true,
       keepConnectionAlive: true
     }),
+    AirlineAirportModule,
   ],
   controllers: [AppController],
   providers: [AppService],
