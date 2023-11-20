@@ -1,6 +1,6 @@
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { AirlineEntity } from 'src/airline/airline.entity';
-import { AirportEntity } from 'src/airport/airport.entity';
+import { AirlineEntity } from '../../airline/airline.entity';
+import { AirportEntity } from '../../airport/airport.entity';
 
 export const TypeOrmTestingConfig = () => [
  TypeOrmModule.forRoot({
